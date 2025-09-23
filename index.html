@@ -3,45 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Internet Investigations - Tools</title>
+  <title>Internet Investigations Tools</title>
+  <link rel="icon" type="image/png" href="https://www.cbrps.ca/images/CBRPS.png">
   <style>
-    /* Make footer stick to bottom */
-    html, body {
-      height: 100%;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
+    body {
       font-family: Arial, sans-serif;
       background-color: #121212;
       color: #e0e0e0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     header {
+      background-color: #1e1e1e;
+      padding: 1rem;
       display: flex;
       align-items: center;
-      justify-content: center;
-      padding: 1.5rem;
-      background: #1f1f1f;
-      border-bottom: 2px solid #333;
-      position: relative;
     }
 
-    header .logo {
-      position: absolute;
-      left: 1.5rem;
-      height: 55px;
-      border-radius: 6px;
+    header img {
+      height: 50px;
+      margin-right: 1rem;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 1.8rem;
-      text-align: center;
-      color: #ffffff;
+      font-size: 1.5rem;
     }
 
     main {
-      flex: 1; /* pushes footer down */
+      flex: 1;
       padding: 2rem;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -49,17 +41,11 @@
     }
 
     .card {
-      background: #1e1e1e;
-      border: 1px solid #333;
-      border-radius: 10px;
+      background-color: #1e1e1e;
       padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.5);
       text-align: center;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
     }
 
     .card svg {
@@ -68,25 +54,24 @@
 
     .card h2 {
       margin: 0.5rem 0;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       color: #fff;
     }
 
     .card p {
       font-size: 0.9rem;
-      color: #bbb;
-      min-height: 40px;
+      margin-bottom: 1rem;
+      color: #ccc;
     }
 
     .card a {
       display: inline-block;
-      margin-top: 1rem;
-      padding: 0.6rem 1.2rem;
-      border-radius: 5px;
+      padding: 0.5rem 1rem;
       background-color: #333;
-      color: #fff;
+      border-radius: 5px;
       text-decoration: none;
-      transition: background 0.3s;
+      color: #fff;
+      transition: background-color 0.3s;
     }
 
     .card a:hover {
@@ -94,179 +79,142 @@
     }
 
     footer {
-      text-align: center;
+      background-color: #1e1e1e;
       padding: 1rem;
-      background: #1f1f1f;
-      border-top: 2px solid #333;
+      text-align: center;
       font-size: 0.9rem;
       color: #aaa;
     }
 
     footer a {
-      color: #4ea3ff;
+      color: #4da6ff;
       text-decoration: none;
     }
 
-    /* 📱 Mobile fix: stack logo above title on small screens */
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-      }
-
-      header .logo {
-        position: static;
-        margin-bottom: 0.5rem;
-        height: 50px;
-      }
-
-      header h1 {
-        font-size: 1.4rem;
-        text-align: center;
-      }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://www.cbrps.ca/images/CBRPS.png" alt="CBRPS Logo" class="logo">
-    <h1>Internet Investigations - Tools</h1>
+    <img src="https://www.cbrps.ca/images/CBRPS.png" alt="CBRPS Logo">
+    <h1>Internet Investigations Tools</h1>
   </header>
 
   <main>
     <!-- OSINT Industries -->
     <div class="card">
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-           viewBox="0 0 24 24" style="fill: lightblue;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: lightblue;">
         <circle cx="12" cy="12" r="10"/>
-        <path d="M2 12h20M12 2a15.3 15.3 0 0 0 0 20M12 2a15.3 15.3 0 0 1 0 20"/>
       </svg>
       <h2>OSINT Industries</h2>
-      <p>Search across multiple platforms for open-source intelligence.</p>
+      <p>Open-source intelligence tools and resources.</p>
       <a href="https://app.osint.industries/" target="_blank">Visit Tool</a>
     </div>
 
     <!-- MaxMind -->
     <div class="card">
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-           viewBox="0 0 24 24" style="fill: violet;">
-        <path d="M12 21s-6-5.686-6-10a6 6 0 0 1 12 0c0 4.314-6 10-6 10z"/>
-        <circle cx="12" cy="11" r="2"/>
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: violet;">
+        <circle cx="12" cy="12" r="10"/>
+        <path d="M2 12h20" style="stroke:white; stroke-width:2;"/>
       </svg>
       <h2>MaxMind GeoIP</h2>
-      <p>Look up IP geolocation and ASN details with MaxMind’s demo.</p>
+      <p>IP geolocation and intelligence services demo.</p>
       <a href="https://www.maxmind.com/en/geoip-web-services-demo" target="_blank">Visit Tool</a>
     </div>
 
     <!-- Search.org -->
     <div class="card">
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-           viewBox="0 0 24 24" style="fill: white;">
-        <circle cx="11" cy="11" r="8"/>
-        <line x1="21" y1="21" x2="16.65" y2="16.65"
-              style="stroke: white; stroke-width: 2;"/>
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: white;">
+        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
       </svg>
       <h2>SEARCH.org</h2>
-      <p>National resource for justice information and research support.</p>
+      <p>National resource for justice information and technology.</p>
       <a href="https://www.search.org/" target="_blank">Visit Tool</a>
     </div>
 
     <!-- Bell Portal -->
     <div class="card">
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-           viewBox="0 0 24 24" style="fill: dodgerblue;">
-        <rect x="3" y="4" width="18" height="16" rx="2"/>
-        <path d="M7 8h10M7 12h6"/>
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: blue;">
+        <rect x="4" y="4" width="16" height="16" rx="2"/>
       </svg>
       <h2>Bell Business Portal</h2>
-      <p>Secure login portal for Bell Canada business customers.</p>
+      <p>Access to Bell's business customer portal.</p>
       <a href="https://www.businessportal.bell.ca/auth/login?LOCALE=en_US" target="_blank">Visit Tool</a>
     </div>
 
     <!-- Kodex -->
     <div class="card">
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-           viewBox="0 0 24 24" style="fill: orange;">
-        <rect x="4" y="4" width="16" height="16" rx="3"/>
-        <path d="M8 8h8v8H8z" style="fill: #121212;"/>
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: orange;">
+        <polygon points="12,2 22,8 22,16 12,22 2,16 2,8"/>
       </svg>
-      <h2>Kodex</h2>
-      <p>Platform for managing lawful data requests and investigations.</p>
+      <h2>Kodex Global</h2>
+      <p>Law enforcement portal for data access and requests.</p>
       <a href="https://app.kodexglobal.com/signin" target="_blank">Visit Tool</a>
     </div>
 
     <!-- Snapchat -->
     <div class="card">
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-           viewBox="0 0 24 24" style="fill: yellow;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: yellow; stroke: black; stroke-width:1;">
         <circle cx="12" cy="12" r="10"/>
-        <path d="M12 7c-2 0-3 1-3 3s1 3 3 3 3-1 3-3-1-3-3-3z"/>
       </svg>
-      <h2>Snapchat Law Enforcement</h2>
-      <p>Request portal for legal process and emergency disclosures.</p>
+      <h2>Snapchat LE Portal</h2>
+      <p>Snapchat portal for law enforcement requests.</p>
       <a href="https://less.snapchat.com/" target="_blank">Visit Tool</a>
-    </div>
-
-    <!-- Microsoft -->
-    <div class="card">
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-           viewBox="0 0 24 24" style="fill: rgba(0, 140, 255, 0.911);">
-        <circle cx="12" cy="12" r="10"/>
-        <path d="M12 7c-2 0-3 1-3 3s1 3 3 3 3-1 3-3-1-3-3-3z"/>
-      </svg>
-      <h2>Microsoft Law Enforcement</h2>
-      <p>Request portal for legal process and emergency disclosures. Requires an account and brief training video.</p>
-      <a href="https://leportal.microsoft.com/home" target="_blank">Visit Tool</a>
     </div>
 
     <!-- Facebook -->
     <div class="card">
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-           viewBox="0 0 24 24" style="fill: dodgerblue;">
-        <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 10h2.5l-.3 2H13v6h-2v-6H9v-2h2V9.5a2.5 2.5 0 0 1 2.5-2.5H15v2h-1a1 1 0 0 0-1 1V12z"/>
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: blue;">
+        <path d="M22 12a10 10 0 10-11.5 9.9v-7h-2v-3h2v-2c0-2 1.2-3 3-3h2v3h-1c-1 0-1 .5-1 1v1h2.5l-.5 3h-2v7A10 10 0 0022 12z"/>
       </svg>
       <h2>Facebook Records</h2>
-      <p>Law enforcement portal for Facebook and Meta data requests.</p>
+      <p>Law enforcement portal for Facebook records.</p>
       <a href="https://www.facebook.com/records/login/" target="_blank">Visit Tool</a>
     </div>
 
     <!-- ISP List -->
     <div class="card">
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: white;">
-        <!-- Computer/Monitor icon -->
-        <rect x="3" y="4" width="18" height="14" rx="2" ry="2" style="fill:none; stroke:white; stroke-width:2"/>
-        <rect x="8" y="18" width="8" height="2" style="fill:white"/>
-        <line x1="12" y1="18" x2="12" y2="16" style="stroke:white; stroke-width:2"/>
-    </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: none; stroke: white; stroke-width: 2;">
+        <rect x="3" y="4" width="18" height="14" rx="2" ry="2"/>
+        <rect x="8" y="18" width="8" height="2" style="fill:white; stroke:none;"/>
+        <line x1="12" y1="18" x2="12" y2="16"/>
+      </svg>
       <h2>ISP Contact List</h2>
       <p>Directory of Internet service provider compliance contacts.</p>
       <a href="https://www.search.org/resources/isp-list/" target="_blank">Visit Tool</a>
     </div>
 
-    <!-- Carrier Lookup List -->
+    <!-- Arkham Intelligence -->
     <div class="card">
-      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-           viewBox="0 0 24 24" style="fill: rgb(0, 255, 64);">
-        <circle cx="11" cy="11" r="8"/>
-        <line x1="21" y1="21" x2="16.65" y2="16.65"
-              style="stroke: rgb(0, 255, 106); stroke-width: 2;"/>
+      <svg xmlns="http://www.w3.org/2000/svg" 
+           width="40" height="40" viewBox="0 0 24 24" 
+           style="fill: none; stroke: lightblue; stroke-width: 2;">
+        <circle cx="12" cy="12" r="10"/>
+        <line x1="9" y1="6" x2="9" y2="18"/>
+        <line x1="15" y1="6" x2="15" y2="18"/>
+        <path d="M9 9h6a2 2 0 0 1 0 4h-6z"/>
+        <path d="M9 13h6a2 2 0 0 1 0 4h-6z"/>
       </svg>
-      <h2>Phone Carrier Lookup</h2>
-      <p>Search for carriers related to phone numbers. Free tool not always 100% accurate.</p>
-      <a href="https://freecarrierlookup.com/" target="_blank">Visit Tool</a>
+      <h2>Arkham Intelligence</h2>
+      <p>
+        Free blockchain analysis tool for searching wallets, transactions, entities, etc.<br>
+        <em>Disclaimer: Not as powerful as paid software</em>
+      </p>
+      <a href="https://intel.arkm.com/" target="_blank">Visit Tool</a>
     </div>
   </main>
 
   <footer>
-    Maintained by Cst. William Petrie — &copy; <span id="year"></span> |
-    Last update: September 2025 |
+    Maintained by Cst. William Petrie • © <span id="year"></span> • 
+    Last update: September 2025 • 
     <a href="mailto:wpetrie@cbrps.ca">wpetrie@cbrps.ca</a>
   </footer>
 
   <script>
-    // auto-fill year in footer
-    document.getElementById('year').textContent = new Date().getFullYear();
+    // Auto update year
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
