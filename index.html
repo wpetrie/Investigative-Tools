@@ -106,6 +106,26 @@
       color: #4ea3ff;
       text-decoration: none;
     }
+
+    /* 📱 Mobile fix: stack logo above title on small screens */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+      }
+
+      header .logo {
+        position: static;
+        margin-bottom: 0.5rem;
+        height: 50px;
+      }
+
+      header h1 {
+        font-size: 1.4rem;
+        text-align: center;
+      }
+    }
   </style>
 </head>
 <body>
