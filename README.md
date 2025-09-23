@@ -6,7 +6,7 @@ A static dark-themed webpage for law enforcement and OSINT investigations. Provi
 
 ## 🔗 Live Site
 The site is hosted via GitHub Pages:  
-[https://<your-username>.github.io/internet-investigations/](https://<your-username>.github.io/internet-investigations/index.html/)  
+[https://<your-username>.github.io/internet-investigations/index.html](https://<your-username>.github.io/internet-investigations/index.html/)  
 
 ---
 
