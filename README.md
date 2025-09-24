@@ -6,7 +6,7 @@ A static dark-themed webpage for law enforcement and OSINT investigations. Provi
 
 ## 🔗 Live Site
 The site is hosted via GitHub Pages:  
-[https://wpetrie.github.io/Investigative-Tools/]([https://wpetrie.github.io/investigative-tools/)  
+[https://wpetrie.github.io/Investigative-Tools/]([https://wpetrie.github.io/investigative-tools/])  
 
 ---
 
