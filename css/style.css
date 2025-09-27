@@ -108,6 +108,7 @@ header h1 {
   color: #ffffff;
 }
 
+
     main {
       flex: 1; /* pushes footer down */
       padding: 2rem;
@@ -174,6 +175,23 @@ header h1 {
       color: #4ea3ff;
       text-decoration: none;
     }
+
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 .nav-links a.disabled {
   pointer-events: none;   /* disables clicking */
   opacity: 0.5;           /* makes it look greyed out */
