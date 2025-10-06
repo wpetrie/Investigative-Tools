@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CBRPS Dashboard - Links</title>
+  <title>CBRPS Dashboard - Home</title>
   <link rel="icon" type="image/png" href="./images/dashboar-logo.png">
   <link rel="stylesheet" href="css/style.css"> 
 </head>
@@ -26,28 +26,30 @@
     </button>
   </nav>
 </header>
-  
-<!-- News -->
+
+<div style="text-align: center;">
+  <h2> News </h2>
+</div>
+
+<!-- NEWS Section -->
+<main>
   <div>
-    <div style="text-align: center;">
-      <h2> News </h2>
-    </div>
     <div class="card">
       <img src="https://i.cbc.ca/1.6997028.1697403421!/fileImage/httpImage/image.JPG_gen/derivatives/16x9_1180/nova-scotia-fallen-police-officer-memorial-service.JPG?im=Resize%3D620" 
        alt="Halifax Memorial" 
        style="width: 250px; height: 250px; object-fit: contain; border-radius: 4px;">
       <h2>43rd Annual Police Memorial</h2>
       <h4><em>Halifax</h4></em>
-        <p>
-          Sign-up is open for the 43rd annual Police memorial Service hosted by Halifax Regional Police. Officers will leave CBRPS on Saturday 18 October and will be provided with a travel van to transport them to Halifax. They will be staying at the Cambridge Hotel in Halifax on Saturday night. On Sunday 19 Oct 2024 at 12:00pm members will meet in the front lobby and head down to the Halifax Police headquarters, We will be forming up at 12:30 p.m. and stepping off at 12:45 p.m.  Where the parade will march to Gran Parade square, where the ceremony will take place from 1:00pm to 2:00pm. After the ceremony, members will return back to CBRM.
-        </p>
+        <p>Sign-up is open for the 43rd annual Police memorial Service hosted by Halifax Regional Police. Officers will leave CBRPS on Saturday 18 October and will be provided with a travel van to transport them to Halifax. They will be staying at the Cambridge Hotel in Halifax on Saturday night.</p>
+        <p>On Sunday 19 Oct 2024 at 12:00pm members will meet in the front lobby and head down to the Halifax Police headquarters, We will be forming up at 12:30 p.m. and stepping off at 12:45 p.m.  Where the parade will march to Gran Parade square, where the ceremony will take place from 1:00pm to 2:00pm. After the ceremony, members will return back to CBRM.</p>
       <a href="https://form.jotform.com/242823902224249" target="_blank">Sign-Up Here</a>
-      <hr>
-      <p><em>2025/10/03 @ 14:06</em></p>
+      <p style="padding: 2rem;"><em>2025/10/03 @ 14:06</em></p>
     </div>
   </div>
-  <main>
+</main>
 
+<!--Links Section-->
+<main>
   <!-- NSGEU -->
     <div class="card">
       <img src="./images/nsgeu.jpg" 
@@ -78,12 +80,14 @@
   </div>
 </main>
 
+<!-- Footer -->
   <footer>
     Maintained by Cst. William Petrie — &copy; <span id="year"></span> |
     Last update: October 2025 |
     <a href="mailto:wpetrie@cbrps.ca">wpetrie@cbrps.ca</a>
   </footer>
 
+  <!-- JAVA Script -->
   <script>
     // auto-fill year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
